@@ -1,6 +1,7 @@
 # Polish Public Tenders Dataset
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19634050.svg)](https://doi.org/10.5281/zenodo.19634050)
+[![Kaggle](https://img.shields.io/badge/Kaggle-dataset-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/michalpozoga/polish-public-tenders)
 [![Data license: CC BY 4.0](https://img.shields.io/badge/data%20license-CC%20BY%204.0-blue.svg)](./LICENSE-DATA)
 [![Code license: MIT](https://img.shields.io/badge/code%20license-MIT-green.svg)](./LICENSE-CODE)
 [![Release](https://img.shields.io/github/v/release/atlasprzetargow/polish-tenders-dataset?label=release)](https://github.com/atlasprzetargow/polish-tenders-dataset/releases)
@@ -174,11 +175,20 @@ Public contributors cannot regenerate — the full DB is not public. But the out
 - **Schema suggestions** — PRs welcome on `schema/` docs.
 - **Code** — `export.py` and `publish.sh` are MIT-licensed; PRs for better formatting, additional derived columns, etc. welcome.
 
+## Mirrors and citations
+
+The same dataset is mirrored on Zenodo (for stable DOI / academic citation) and Kaggle (for ML / notebook discoverability):
+
+- **Zenodo:** [`10.5281/zenodo.19634050`](https://doi.org/10.5281/zenodo.19634050) (versioned) · concept DOI: [`10.5281/zenodo.19634049`](https://doi.org/10.5281/zenodo.19634049) (resolves to latest version)
+- **Kaggle:** [`michalpozoga/polish-public-tenders`](https://www.kaggle.com/datasets/michalpozoga/polish-public-tenders) — same files, plus discoverable through Kaggle's notebook search
+- **GitHub** (this repo) — primary source, with full source code, schema docs, and the getting-started notebook
+
 ## Related
 
-- 🔍 **Atlas Przetargów** — search UI: <https://atlasprzetargow.pl>
-- 🤖 **MCP Server** — `@atlasprzetargow/mcp` on npm — query this data from Claude/Cursor
-- 📊 **API** — <https://atlasprzetargow.pl/api/tenders>
+- **Atlas Przetargów** — search UI: <https://atlasprzetargow.pl>
+- **MCP Server** — `@atlasprzetargow/mcp` on npm — query this data from Claude/Cursor
+- **REST API** — <https://atlasprzetargow.pl/api/tenders>
+- **Launch blog post** (methodology details) — <https://atlasprzetargow.pl/blog/open-data-polskich-przetargow-2024-2025>
 
 ## Changelog
 

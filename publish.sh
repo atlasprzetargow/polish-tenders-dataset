@@ -83,8 +83,8 @@ publish_kaggle() {
         echo "ERROR: kaggle CLI not installed. Run: pip install kaggle" >&2
         exit 1
     fi
-    if [[ ! -f "${HOME}/.kaggle/kaggle.json" ]]; then
-        echo "ERROR: ~/.kaggle/kaggle.json missing. Create token at https://www.kaggle.com/settings/account" >&2
+    if [[ ! -f "${HOME}/.kaggle/kaggle.json" && ! -f "${HOME}/.kaggle/access_token" && -z "${KAGGLE_API_TOKEN:-}" ]]; then
+        echo "ERROR: No Kaggle credentials found. Either ~/.kaggle/kaggle.json (legacy) or ~/.kaggle/access_token (new KGAT_ tokens) or KAGGLE_API_TOKEN env var. Get one at https://www.kaggle.com/settings/account" >&2
         exit 1
     fi
 
@@ -99,7 +99,7 @@ publish_kaggle() {
   "title": "Polish Public Tenders Dataset (BZP + TED)",
   "id": "${KAGGLE_SLUG}",
   "licenses": [{"name": "CC-BY-4.0"}],
-  "keywords": ["procurement", "poland", "tenders", "government", "public-sector", "bzp", "ted", "nuts-2", "cpv", "open-data", "transparency", "eu"],
+  "keywords": ["government", "europe", "tabular", "economics"],
   "subtitle": "~1.4M Polish public procurement notices aggregated from BZP + TED (2024-present)",
   "description": "Open dataset of Polish public procurement notices aggregated from BZP (Biuletyn Zamowien Publicznych, Polish national procurement bulletin) and TED (Tenders Electronic Daily, EU-wide procurement database). Covers 2024 onward — ~1.4M tender notices, ~23k buyer profiles, ~82k contractor profiles. Natural-person contractors (sole proprietors) are anonymized via a stable salted SHA-256 hash to comply with Polish/EU data protection law. Full schema docs, a getting-started notebook (with HHI market-concentration analysis), and open-source anonymization code are available in the source repository: https://github.com/${REPO_OWNER}/${REPO_NAME}"
 }
