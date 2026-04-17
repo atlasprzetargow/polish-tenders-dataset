@@ -1,6 +1,14 @@
 # Polish Public Tenders Dataset
 
-Open dataset of Polish public procurement notices aggregated from official sources: **BZP** (Biuletyn Zamówień Publicznych) and **TED** (Tenders Electronic Daily).
+[![Data license: CC BY 4.0](https://img.shields.io/badge/data%20license-CC%20BY%204.0-blue.svg)](./LICENSE-DATA)
+[![Code license: MIT](https://img.shields.io/badge/code%20license-MIT-green.svg)](./LICENSE-CODE)
+[![Release](https://img.shields.io/github/v/release/atlasprzetargow/polish-tenders-dataset?label=release)](https://github.com/atlasprzetargow/polish-tenders-dataset/releases)
+[![Records](https://img.shields.io/badge/records-1.4M-0d9488.svg)](#summary)
+[![Anonymization](https://img.shields.io/badge/PII-anonymized-brightgreen.svg)](#privacy--anonymization)
+[![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](./export.py)
+[![Atlas Przetargów](https://img.shields.io/badge/maintained%20by-Atlas%20Przetargów-0d9488.svg)](https://atlasprzetargow.pl)
+
+Open dataset of Polish public procurement notices aggregated from official sources: **BZP** (Biuletyn Zamówień Publicznych, Polish national portal) and **TED** (Tenders Electronic Daily, EU-wide database).
 
 Maintained by [Atlas Przetargów](https://atlasprzetargow.pl) — the Polish public procurement search and analytics platform.
 
@@ -89,11 +97,13 @@ Full schema: [`schema/tenders.md`](./schema/tenders.md).
 
 ## Attribution
 
-If you use this dataset, please cite:
+If you use this dataset, please cite it. A machine-readable [`CITATION.cff`](./CITATION.cff) is included so GitHub, Zenodo, and reference managers (Zotero, Mendeley) can import the citation automatically.
 
-> Atlas Przetargów (2026). *Polish Public Tenders Dataset*. Retrieved from <https://github.com/atlasprzetargow/polish-tenders-dataset>
+Human-readable citation:
 
-Or, if using the Zenodo version with DOI:
+> Atlas Przetargów (2026). *Polish Public Tenders Dataset (BZP + TED)*, version 2026.Q2. <https://github.com/atlasprzetargow/polish-tenders-dataset>
+
+Or, if using the Zenodo-archived version with DOI:
 
 > Atlas Przetargów (2026). *Polish Public Tenders Dataset*. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
 

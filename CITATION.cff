@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this dataset in academic or professional work, please cite it as below."
+title: "Polish Public Tenders Dataset (BZP + TED)"
+abstract: >-
+  Open dataset of Polish public procurement notices aggregated from official sources:
+  BZP (Biuletyn Zamówień Publicznych, the Polish national procurement portal) and
+  TED (Tenders Electronic Daily, the EU-wide procurement database). Covers 2024
+  onward, with roughly 1.4 million tender notices, ~100k buyer profiles and
+  ~80k contractor profiles. Natural-person contractors (sole proprietors under
+  CEIDG) are anonymized to comply with Polish and EU data protection law.
+type: dataset
+url: "https://github.com/atlasprzetargow/polish-tenders-dataset"
+repository-code: "https://github.com/atlasprzetargow/polish-tenders-dataset"
+repository: "https://atlasprzetargow.pl"
+license: CC-BY-4.0
+date-released: "2026-04-17"
+version: "2026.Q2"
+keywords:
+  - public procurement
+  - Poland
+  - BZP
+  - TED
+  - open data
+  - government
+  - public sector
+  - economics
+  - CPV
+  - NUTS-2
+authors:
+  - name: "Atlas Przetargów"
+    website: "https://atlasprzetargow.pl"
+    country: PL
