@@ -57,7 +57,9 @@ To keep CSVs usable:
 
 ## Anonymization
 
-Under Polish/EU data-protection law (RODO/GDPR), we cannot publish identifying data for natural persons under an open license. The following contractor rows are anonymized before release:
+Polish public procurement award data is, by law, public (PZP art. 269 mandates publication in BZP; the EU Open Data Directive 2019/1024 encourages re-use). **No anonymization is legally required.** Aggregator platforms have been republishing this data for over a decade without modification.
+
+As a precautionary measure for bulk redistribution of 1.4M records under an open license, the following contractor rows are additionally anonymized in this dataset (this is optional, not GDPR-mandated):
 
 1. `contractor_national_id` is 11 digits long (PESEL — personal identifier; companies use 10-digit NIP)
 2. `contractor_name` contains explicit markers: *"osoba fizyczna"*, *"jednoosobowa działalność"*, *"prowadzący działalność"*, *CEIDG*

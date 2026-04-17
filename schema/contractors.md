@@ -35,7 +35,7 @@ joined = results.merge(contractors, left_on="contractor_national_id", right_on="
 
 ## Anonymization
 
-Natural-person contractors (CEIDG sole proprietors, PESEL holders) are anonymized to comply with Polish/EU data protection law. Anonymized rows have:
+Polish procurement contractor data is legally public (PZP art. 269). As a precautionary measure — not a legal requirement — natural-person contractors (CEIDG sole proprietors, PESEL holders) are anonymized in this published dataset. Anonymized rows have:
 - `name` = `"[Osoba fizyczna]"`
 - `nip` = `"anon-"` + 10-char SHA-256 hash (stable across releases with the same salt; irreversible)
 

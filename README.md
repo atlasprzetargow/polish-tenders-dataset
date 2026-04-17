@@ -128,12 +128,9 @@ This dataset adds on top of the raw sources:
 
 ## Privacy & anonymization
 
-Polish public procurement data includes two distinct actor types on the contractor side:
+Polish public procurement contract-award data is, by law, public: Article 269 of the Polish Public Procurement Act (PZP) mandates publication of contractor names and NIPs in the BZP bulletin, and the EU Open Data Directive 2019/1024 actively encourages re-use of procurement data. Aggregator platforms (eGospodarka, Oferent, Bazhub, etc.) have been republishing this data for over a decade without anonymization; the Polish Data Protection Authority (UODO) has taken no enforcement action. **No anonymization is legally required**, either for buyers or contractors.
 
-1. **Companies** (Sp. z o.o., S.A., cooperatives, public institutions) — these are public-registry entities. Their names, NIPs, and award histories remain in the dataset.
-2. **Natural persons** — sole proprietors registered in CEIDG (jednoosobowa działalność gospodarcza) and, more rarely, consortium members acting as private individuals. Under Polish/EU data protection law (RODO/GDPR), redistributing their names and identifiers under an open license requires their consent, which we cannot obtain at scale.
-
-To comply, we anonymize all contractor rows where our heuristic classifies the winner as a natural person. The rules are:
+That said, bulk redistribution of 1.4M records under a CC BY license — downloadable by any crawler — differs qualitatively from per-query lookups on a website. As a **precautionary measure**, we additionally anonymize contractor rows where our heuristic classifies the winner as a natural person. This is optional, not GDPR-mandated. Rules applied:
 
 - `contractor_national_id` is 11 digits long (PESEL — Polish personal identifier; companies use 10-digit NIPs)
 - `contractor_name` contains explicit markers such as *"osoba fizyczna"*, *"jednoosobowa działalność"*, *"prowadzący działalność"*, or *CEIDG*
