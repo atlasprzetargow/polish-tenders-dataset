@@ -1,0 +1,28 @@
+# Exported data split strategy (see publish.sh):
+#   Parquet files + small CSV aggregates → committed to git (browsable on GitHub, fits under 100 MB limit)
+#   Large tender CSVs + buyers.csv → uploaded as release assets (gzipped)
+
+# Ignore large CSVs that go to releases instead of git
+data/tenders_*.csv
+data/buyers.csv
+
+# Parquet files and small CSVs ARE committed to git
+!data/*.parquet
+!data/contractors.csv
+!data/city_cache.csv
+!data/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env / secrets
+.env
+.kaggle/
+*.token
+data/.anon_salt
+
+# PII audit output (keep manually when reviewing; don't auto-commit)
+PII_AUDIT*.md
