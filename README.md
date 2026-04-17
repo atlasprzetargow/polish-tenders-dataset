@@ -44,6 +44,8 @@ LICENSE-CODE                # MIT (for code)
 
 ## Quick start
 
+For a full runnable tour — including a bar chart of top CPV divisions, a Herfindahl-Hirschman market-concentration calculation, and a DuckDB-over-HTTP example — see [`notebooks/01_getting_started.ipynb`](./notebooks/01_getting_started.ipynb). Rendered directly by GitHub, no local setup needed to preview.
+
 ### Pandas
 
 ```python
